@@ -1,9 +1,6 @@
-package contacts;
-
+package secondLevel;
 
 import java.util.Scanner;
-
-
 
 class ConsoleInput implements Input {
     private Scanner scanner = new Scanner(System.in);
@@ -13,4 +10,8 @@ class ConsoleInput implements Input {
         return this.scanner.next();
     }
 
+    @Override
+    public String nextLine() {
+        return this.scanner.nextLine();
+    }
 }
